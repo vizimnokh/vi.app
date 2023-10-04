@@ -1,8 +1,13 @@
-// The 'hello' program.
-program hello.aleo {
-    transition main( a: u32, b: u32) -> u32 {
-        assert_eq(b.rem(2u32), 0u32);
-        let c: u32 = a + b;
-        return c;
-    }
-}
+# token_14488.aleo
+
+## Build Guide
+
+To compile this Aleo program, run:
+```bash
+snarkvm build
+```
+
+To execute this Aleo program, run:
+```bash
+snarkvm run hello
+```
